@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -84,10 +88,10 @@ h2 {
 }
 
 img {
-    float:left;
+    float: left;
     height: 160px;
-    width: 150px;
-    margin: 10px 20px 1px 15px;
+    width: 168px;
+    margin: 10px 20px 1px 15px
 }
 
 p {
@@ -139,6 +143,7 @@ footer {
 img.image {
     z-index: 0;
     padding: 0 10px;
+    display: block;
 }
 
 .text{
@@ -149,7 +154,7 @@ img.image {
     padding-bottom: 5px;
     left: 15%;
     bottom: -692%;
-    width: 64.25%;
+    width: 63.25%;
     color: white;
     
 }
@@ -250,3 +255,189 @@ input [type=email] {
     background-color: #45a049;
 }
 
+@media screen and (max-width:960px) {
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.hborder {
+    background-color: #ffffff;
+    border-bottom: 2px solid #cccccc;
+    overflow: auto;
+    top: 0;
+}
+
+.head {
+    width: 960px;
+    margin: 0 auto 0 auto;
+}
+
+
+.about {
+    display: block;
+    align-content: center;
+    width: 60%;
+    margin: 50px auto 80px 95px;
+}
+
+
+img {
+    float: left;
+    height: 160px;
+    width: 168px;
+    margin: 10px 20px 1px 15px
+}
+
+.contactForm, .about {
+    width: 70%;
+    margin: 50px auto 0 95px;
+}
+/* ...... */
+
+.head {
+    width: 80%;
+}
+
+
+.column {
+    width: auto;
+}
+
+}
+
+@media screen and (max-width:768px) {
+
+body {
+    margin-bottom: 80px;
+}
+
+.name{
+    display: flex;
+    width: auto;
+    float: left;
+}
+
+.head {
+    width: 90%;
+}
+
+ul.m-nav{
+    display: flex;
+    width: 50%;
+    float: left;
+}
+
+.text {
+    left: 15.75%;
+    width: 66.7%;
+}
+
+.contactForm, .about {
+    margin: 50px auto 0 40px;
+}
+/* Portfolio */
+    
+.about {
+    width: 70%;
+    float: left;
+}
+
+/* Contact */
+
+.contactForm {
+    float: left;
+    width: 70%;
+}
+
+}
+
+@media screen and (max-width:640px) {
+    
+    body{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+    
+    .hborder {
+        background-color: #ffffff;
+        border-bottom: 2px solid #cccccc;
+        overflow: auto;
+        top: 0;
+    }
+    
+    .head {
+        width: 100%;
+        margin: 0 auto 0 auto;
+    }
+
+    .name {
+        width: 100%;
+    }
+    
+    h1 {
+        justify-content: center;
+    }
+    
+    nav {
+        float: right;
+        padding: 16px 0 16px;
+    }
+    
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    ul.m-nav{
+        display: flex;
+        width: auto;
+        float: left;
+    }
+    
+    
+    .about {
+        display: block;
+        align-content: center;
+        width: 90%;
+        margin: 50px auto 0 auto;
+    }
+    
+    #me {
+        display: block;
+        float: none;
+        height: 300px;
+        width: auto;
+        margin: 15px auto 15px auto;
+    }
+    
+    .contactForm {
+        width: 90%;
+        margin: 50px auto 0 auto;
+    }
+    /* ...... */
+    
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .head {
+        width: 100%;
+    }
+    
+    .column {
+        width: 30%;
+    }
+    
+    .text {
+        left: 21.9%;
+        width: 92.75%;
+    }
+
+}
